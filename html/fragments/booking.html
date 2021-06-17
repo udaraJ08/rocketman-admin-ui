@@ -1,0 +1,245 @@
+<link rel="stylesheet" href="../../css/booking.css" />
+
+<div class="test-container center">
+  <section class="bk-mid-container d-flex flex-clm">
+    <div class="bk-mid-upper">
+      <section class="bk-status center">
+        <section class="bk-st-mid">
+          <form id="bk-st-form">
+            <section class="center">
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="chkDepartured"
+                  value="departured"
+                />
+                <label class="form-check-label" for="chkDepartured"
+                  >Departure</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="chkArrived"
+                  value="arrived"
+                />
+                <label class="form-check-label" for="chkArrived">Arrived</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="chkClosed"
+                  value="close"
+                />
+                <label class="form-check-label" for="chkClosed"
+                  >release</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="chkCanceled"
+                  value="cancel"
+                />
+                <label class="form-check-label" for="chkCanceled">Cancel</label>
+              </div>
+            </section>
+            <section>
+              <div class="form-group">
+                <label for="startMileage">Start Mileage</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="startMileage"
+                  aria-describedby="emailHelp"
+                />
+                <small id="emailHelp" class="form-text text-muted"></small>
+              </div>
+            </section>
+            <section>
+              <div class="form-group">
+                <label for="endMileage">End Mileage</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="endMileage"
+                  aria-describedby="emailHelp"
+                />
+                <small id="hlpEndMileage" class="form-text text-muted"></small>
+              </div>
+            </section>
+            <section class="d-flex justify-content-between">
+              <section>
+                <label for="checkGrp"> Release status </label>
+              </section>
+              <section>
+                <div class="form-check form-check-inline" id="checkGrp">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="chkNtReleased"
+                    value="departured"
+                  />
+                  <label class="form-check-label" for="chkNtReleased"
+                    >Not released</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="chkReleased"
+                    value="arrived"
+                  />
+                  <label class="form-check-label" for="chkReleased"
+                    >released</label
+                  >
+                </div>
+              </section>
+            </section>
+            <section class="d-flex d-flex justify-content-end">
+              <button id="btnSubmit" class="btn btn-primary">Submit form</button>
+            </section>
+          </form>
+        </section>
+      </section>
+      <section class="bk-details center">
+        <div class="bk-det overflow-auto">
+          <div>
+            <section class="d-flex flex-column">
+              <section class="d-flex w-100 justify-content-between">
+                <section class="flex-clm center">
+                  <p class="small">Booking ID</p>
+                  <h5 id="lblBookingID" class=>.....</h5>
+                </section>
+                <section class="flex-clm center">
+                  <p class="small">status</p>
+                  <h5 class="text-success" id="lblBookingStatus">.....</h5>
+                </section>
+              </section>
+              <br>
+              <section class="d-flex w-100 justify-content-between">
+                <section class="flex-clm center">
+                  <p class="small">Customer NIC</p>
+                  <h6 id="lblCustomerNIC">.....</h6>
+                </section>
+                <section class="flex-clm center">
+                  <p class="small">Booking Type</p>
+                  <h5 id="lblBookingType">.....</h5>
+                </section>
+              </section>
+            </section>
+          </div>
+          <hr>
+          <div>
+            <section class="d-flex flex-column">
+            <section class="d-flex w-100 justify-content-between">
+              <section class="flex-clm center">
+                <p class="small">Booking date</p>
+                <h6 id="lblBookedDate">.....</h6>
+              </section>
+              <section class="flex-clm center">
+                <p class="small">departure date</p>
+                <h6 class="text-primary" id="lblDepDate">.....</h6>
+              </section>
+              <section class="flex-clm center">
+                <p class="small">arrival date</p>
+                <h6 class="text-danger" id="lblArrDate">.....</h6>
+              </section>
+            </section>
+            <br>
+            <section class="d-flex w-100 justify-content-between">
+              <section class="flex-clm center">
+                <p class="small">departure time</p>
+                <h5 id="lblDepartureTime">.....</h5>
+              </section>
+              <section class="flex-clm center">
+                <p class="small">Duration</p>
+                <h5 id="lblDuration">.....</h5>
+              </section>
+            </section>
+          </section>
+        </div>
+        <hr>
+          <div>
+            <section class="d-flex flex-column">
+              <section class="d-flex w-100 justify-content-between">
+                <section class="flex-clm center">
+                  <p class="small">Start Mileage</p>
+                  <h5 id="lblStartMileage">.....</h5>
+                </section>
+                <section class="flex-clm center">
+                  <p class="small">End Mileage</p>
+                  <h5 id="lblEndMileage">.....</h5>
+                </section>
+              </section>
+              <br>
+              <section class="d-flex w-100 justify-content-between">
+                <section class="flex-clm center">
+                  <p class="small">Vehicle Number</p>
+                  <h5 id="lblVehicleNumber">.....</h5>
+                </section>
+                <section class="flex-clm center">
+                  <p class="small">Driver NIC</p>
+                  <h6 id="lblDriverNIC">.....</h6>
+                </section>
+              </section>
+            </section>
+          </div>
+          <hr>
+          <div>
+            <section class="d-flex flex-column">
+              <section class="d-flex w-100 justify-content-between">
+                <section class="flex-clm center">
+                  <p class="small">Release Date</p>
+                  <h5 id="lblReleaseDate">.....</h5>
+                </section>
+                <section class="flex-clm center">
+                  <p class="small">Release Status</p>
+                  <h5 class="text-primary" id="lblReleaseStatus">.....</h5>
+                </section>
+              </section>
+          </div>
+        </div>
+      </section>
+      <section class="bk-diagram"></section>
+    </div>
+    <div class="bk-mid-lower overflow-auto">
+      <table class="bk-table table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th scope="col">booking ID</th>
+            <th scope="col">booking date</th>
+            <th scope="col">arrival date</th>
+
+            <th scope="col">departure date</th>
+            <th scope="col">departure time</th>
+            <th scope="col">Booking Type</th>
+
+            <th scope="col">duration</th>
+            <th scope="col">booking status</th>
+            <th scope="col">customer NIC</th>
+            <th scope="col">vehicle number</th>
+
+            <th scope="col">driver NIC</th>
+            <th scope="col">Start Mileage</th>
+            <th scope="col">End Mileage</th>
+
+            <th scope="col">Release Date</th>
+            <th scope="col">Release Status</th>
+            <!-- <th scope="col">departure time</th> -->
+          </tr>
+        </thead>
+        <tbody id="tblbookingData">
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>
+
+<script src="../../controllers/BookingController.js"></script>
+<script src="../../js/booking.js"></script>

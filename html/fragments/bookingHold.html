@@ -1,0 +1,174 @@
+<link
+  href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="../../css/bookingHold.css" />
+
+<div class="bk-hld-main-container center">
+  <div class="bk-hld-mid-container">
+    <div class="bk-hld-left">
+      <div class="bk-hld-left-upper center">
+        <div>
+          <section class="bk-hld-date-section d-flex">
+            <input
+              class="bg-success text-light"
+              id="inptStartDate"
+              type="date"
+            />
+            &nbsp; &nbsp; &nbsp;
+            <input class="bg-danger text-light" id="inptEndDate" type="date" />
+            &nbsp; &nbsp; &nbsp;
+            <button id="btnDtSubmit" class="btn btn-primary">
+              AVAILABILITY CHECK <i class="fas fa-search"></i>
+            </button>
+          </section>
+          <hr class="bg-dark" />
+          <section class="bk-hld-input-section">
+            <section class="bk-hld-input-section-left d-flex flex-clm">
+              <section id="bk-hld-driver">
+                <section class="driver-section">
+                  <section
+                    id="driver-tab-section"
+                    class="hld-driver-tab d-flex flex-clm"
+                  ></section>
+                </section>
+              </section>
+              <section class="center bg-primary">
+                <h6 class="text-light lead">Not available drivers</h6>
+              </section>
+            </section>
+            <section class="bk-hld-input-section-right d-flex flex-clm">
+              <section id="bk-hld-vehicle d-flex flex-clm">
+                <section class="driver-section">
+                  <section
+                    id="vehicle-tab-section"
+                    class="hld-driver-tab d-flex flex-clm"
+                  ></section>
+                </section>
+              </section>
+              <section class="center bg-danger">
+                <h6 class="text-light lead">Not available vehicles</h6>
+              </section>
+            </section>
+          </section>
+        </div>
+      </div>
+      <div class="bk-hld-left-lower">
+        <table class="table table-bordered table-hover bk-hld-table">
+          <thead>
+            <tr>
+              <th scope="col">customer</th>
+              <th scope="col">driver</th>
+              <th scope="col">vehicle</th>
+              <th scope="col">booked date</th>
+              <th scope="col">departure date</th>
+              <th scope="col">arrival date</th>
+              <th scope="col">release date</th>
+              <th scope="col">arrival time</th>
+              <th scope="col">duration</th>
+            </tr>
+          </thead>
+          <tbody id="bk-hld-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="bk-hld-right center">
+      <div class="bk-hld-right-mid">
+        <div>
+          <section class="d-flex justify-content-around">
+            <section>
+              <p class="small">Hold ID</p>
+              <h1 id="hldHoldID" class="bk-hld-det lead">..........</h1>
+            </section>
+            <section>
+              <p class="small">Duration</p>
+              <h5 id="hldDuration" class="bk-hld-det lead text-primary">
+                .............
+              </h5>
+            </section>
+          </section>
+          <br /><br />
+          <hr />
+          <section class="d-flex justify-content-between">
+            <section>
+              <p class="small">customer NIC</p>
+              <h5 id="hldCustomerNIC" class="bk-hld-det lead">.............</h5>
+            </section>
+            <section>
+              <p class="small">Driver NIC</p>
+              <h id="hldDriverNIC" class="bk-hld-det lead">.............</h>
+              <br />
+              <select class="bg-primary text-light" name="" id="drpdwn-hld">
+                <option>Change NIC</option>
+              </select>
+            </section>
+            <section>
+              <p class="small">vehicle number</p>
+              <h5 id="hldVehicleNumber" class="bk-hld-det lead">
+                .............
+              </h5>
+            </section>
+          </section>
+        </div>
+        <br />
+        <hr />
+        <div class="flex-clm d-flex">
+          <section class="d-flex justify-content-between">
+            <input type="hidden" name="" id="hndBookingHoldID" value="" />
+            <section>
+              <p class="small">Booking date</p>
+              <h5 id="hldBookedDate" class="bk-hld-det lead">.............</h5>
+            </section>
+            <section>
+              <p class="small">departure date</p>
+              <h5 id="hldDepartureDate" class="bk-hld-det lead text-danger">
+                .............
+              </h5>
+            </section>
+            <section>
+              <p class="small">arrival date</p>
+              <h5 id="hldarrivalDate" class="bk-hld-det lead text-primary">
+                .............
+              </h5>
+            </section>
+          </section>
+          <br />
+          <br />
+          <section>
+            <section class="d-flex justify-content-around">
+              <section>
+                <p class="small">booking type</p>
+                <h5 id="hldBookingType" class="bk-hld-det lead">
+                  .............
+                </h5>
+              </section>
+              <section>
+                <p class="small">departure time</p>
+                <h5 id="hldDepartureTime" class="bk-hld-det lead">
+                  .............
+                </h5>
+              </section>
+            </section>
+          </section>
+        </div>
+        <br />
+        <hr />
+        <div class="d-flex justify-content-center">
+          <img
+            src="/assets/images/undraw_Playful_cat_re_bxiu.svg"
+            width="70%"
+            alt=""
+          />
+        </div>
+        <br />
+        <hr />
+        <div class="d-flex justify-content-around">
+          <button id="btnOpenReq" class="btn btn-primary">OPEN REQUEST</button>
+          <button id="btnClsReq" class="btn btn-danger">CANCEL REQUEST</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../../controllers/BookingHoldController.js"></script>
