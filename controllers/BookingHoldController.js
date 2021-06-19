@@ -71,7 +71,7 @@ function renderVehicleBookingDet(driverList, vehicleLsit) {
     if (driverList.length === 0)
         $("#vehicle-tab-section").append("<h6 class='text-dark'>All drivers available</h6>");
     if (vehicleLsit.length === 0)
-        $("#vehicle-tab-section").append("<h6 class='text-dark'>All Vehicles Available</h6>");
+        $("#driver-tab-section").append("<h6 class='text-dark'>All Vehicles Available</h6>");
 
 
     driverList.map(element => {

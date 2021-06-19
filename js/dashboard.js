@@ -1,15 +1,28 @@
 let dataArr = [];
 let holdBooking = []
 let driverArr = []
+let vehicleArr = []
 
+let driverOrArr = []
+let customerOrArr = []
+let PaymentOrArr = []
+
+let vehicleIndex = 0;
 let hldIndex = 0;
+let driverOrIndex = 0;
+let customerOrIndex = 0
+let paymentOrIndex = 0
 
 let rotate = false;
 let bookingTableLoad = false
 
+/////false = add
+////true = update
+let vehicleUpdateOrAdd = false
+
 $(document).ready(() => {
     $.ajax({
-        url: "../html/fragments/bookingHold.html",
+        url: "../html/fragments/payment.html",
         success: function (result) {
             $(".panel-container").html(result);
         }
@@ -41,6 +54,56 @@ $("#bookingBtn").on('click', () => {
 $("#btnBookingHold").on('click', () => {
     $.ajax({
         url: "../html/fragments/bookingHold.html",
+        success: function (result) {
+            $(".panel-container").html(result);
+        }
+    });
+    slider()
+})
+
+$("#btnPaymentView").on('click', () => {
+    $.ajax({
+        url: "../html/fragments/payment.html",
+        success: function (result) {
+            $(".panel-container").html(result);
+        }
+    });
+    slider()
+})
+
+$("#btnVehiclesView").on('click', () => {
+    $.ajax({
+        url: "../html/fragments/vehicle.html",
+        success: function (result) {
+            $(".panel-container").html(result);
+        }
+    });
+    slider()
+})
+
+$("#btnDriversView").on('click', () => {
+    $.ajax({
+        url: "../html/fragments/driver.html",
+        success: function (result) {
+            $(".panel-container").html(result);
+        }
+    });
+    slider()
+})
+
+$("#brand-logo").on('click', () => {
+    $.ajax({
+        url: "../html/fragments/dashboard.html",
+        success: function (result) {
+            $(".panel-container").html(result);
+        }
+    });
+    slider()
+})
+
+$("#btnCustomerView").on('click', () => {
+    $.ajax({
+        url: "../html/fragments/customer.html",
         success: function (result) {
             $(".panel-container").html(result);
         }

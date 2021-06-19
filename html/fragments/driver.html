@@ -1,0 +1,150 @@
+<link rel="stylesheet" href="../../css/driver.css" />
+
+<div class="driver-main-container w-100 h-100 center">
+  <div class="driver-mid-container">
+    <div class="driver-mid-left">
+      <div class="driver-left-upper center">
+        <div class="driver-lft-upr-left center bg-primary">
+          <div class="input-group mb-3 p-5">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="can be searched by any attribute"
+              aria-label="Recipient's username"
+              aria-describedby="basic-addon2"
+              id="inptDriverSearch"
+            />
+            <div class="input-group-append">
+              <button class="btn btn-warning" type="button">
+                search
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="driver-lft-upr-right bg-success text-light">
+          <section class="drv-upr-rght-left center flex-clm">
+            <i class="fas fa-user-astronaut display-2 mb-2 text-warning"></i>
+            <h3>Count</h3>
+          </section>
+          <section class="drv-upr-rght-right center">
+            <h3 id="lblDriverCount" class="display-3">50</h3>
+          </section>
+        </div>
+      </div>
+      <div class="driver-left-lower">
+        <table
+          class="table table-bordered table-hover table-dark all-driver-table"
+        >
+          <thead>
+            <tr>
+              <th scope="col">driver NIC</th>
+              <th scope="col">name</th>
+              <th scope="col">address</th>
+              <th scope="col">contact</th>
+              <th scope="col">gmail</th>
+            </tr>
+          </thead>
+          <tbody id="all-driver-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="driver-mid-right center bg-success">
+      <div class="driver-mid-form bg-light">
+        <section>
+          <h1 class="display-6 text-secondary">Driver Manage</h1>
+        </section>
+        <hr />
+        <section>
+          <section>
+            <label for="inptDriverNIC" class="small">Driver NIC</label><br />
+            <input
+              type="text"
+              id="inptDriverNIC"
+              class="input-group-text driver-inpt w-100"
+            />
+          </section>
+        </section>
+        <br />
+        <section>
+          <section>
+            <section>
+              <label for="inptDriverName" class="small">Driver Name</label
+              ><br />
+              <!-- <br /> -->
+              <input
+                type="text"
+                id="inptDriverName"
+                class="input-group-text driver-inpt w-100"
+              />
+            </section>
+          </section>
+        </section>
+        <br />
+        <section>
+          <section>
+            <section>
+              <label for="inptDriverContact" class="small"
+                >Driver Contact</label
+              >
+              <input
+                type="text"
+                id="inptDriverContact"
+                class="input-group-text driver-inpt w-100"
+              />
+            </section>
+          </section>
+        </section>
+        <br />
+        <section>
+          <section>
+            <section>
+              <label for="inptDriverAddress" class="small"
+                >Driver Address</label
+              >
+              <input
+                type="text"
+                id="inptDriverAddress"
+                class="input-group-text driver-inpt w-100"
+              />
+            </section>
+          </section>
+        </section>
+        <br />
+        <section>
+          <section>
+            <section>
+              <label for="inptDriverMail" class="small">Driver Email</label
+              ><br />
+              <input
+                type="email"
+                id="inptDriverMail"
+                class="input-group-text driver-inpt w-100"
+              />
+            </section>
+          </section>
+        </section>
+        <hr />
+        <br />
+        <section class="d-flex justify-content-between mb-1 mt-3">
+          <section>
+            <button class="btn btn-primary" id="btn-driver-add">ADD</button>
+            <button class="btn btn-danger" id="btn-driver-remove">
+              REMOVE
+            </button>
+            <button class="btn btn-success" id="btn-driver-update">
+              UPDATE
+            </button>
+          </section>
+          <section>
+            <button id="btnDriverClear" class="btn btn-outline-danger">
+              CLEAR <i class="fas fa-sync"></i>
+            </button>
+          </section>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../../controllers/driverController.js"></script>

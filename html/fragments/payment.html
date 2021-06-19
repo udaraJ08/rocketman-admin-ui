@@ -1,0 +1,80 @@
+<link rel="stylesheet" href="../../css/payment.css" />
+
+<div class="payment-main-container w-100 h-100 center">
+  <div class="payment-mid-container">
+    <div class="vehicle-mid-upper">
+      <div class="vehicle-upper-left">
+        <div class="vh-up-lft-upper center">
+          <section class="d-flex justify-content-between">
+            <section class="d-flex justify-content-between" style="width: 65%">
+              <input class="payment-cal bg-success" id="clndrPaymentStart" type="date" />
+              <input class="payment-cal bg-danger" id="clndrPaymentEnd" type="date" />
+              <button class="btn btn-primary" style="font-size: 20px" id="btnPaymentSearchByRange">
+                search &nbsp;<i class="fas fa-search"></i>
+              </button>
+            </section>
+            <section class="d-flex" style="height: 100%">
+              <button
+                class="btn"
+                style="font-size: 20px; background: #353b48; color: white"
+                id="btnSearchPaymentToday"
+              >
+                Search today
+              </button>
+            </section>
+          </section>
+        </div>
+        <div class="vh-up-lft-lower">
+          <section class="payment-det-tab vh-payment-count d-flex flex-clm bg-danger">
+            <section class="d-flex">
+              <h5 class="text-light">Payments count</h5>
+            </section>
+            <section class="d-flex">
+              <i class="fas fa-box-open text-primary" style="font-size: 70px"></i>
+            </section>
+            <section class="d-flex lead text-white"><h2 id="lblPaymentCount">13</h2></section>
+          </section>
+          <section class="payment-det-tab vh-payment-amount d-flex flex-clm bg-primary">
+            <section class="d-flex">
+              <h5 class="text-light">Payments amount</h5>
+            </section>
+            <section class="d-flex">
+              <i class="fas fa-coins text-danger" style="font-size: 70px"></i>
+            </section>
+            <section class="d-flex lead text-light"><h4 id="lblPaymentAmount">27000.00</h4></section>
+          </section>
+          </section>
+          <section class="payment-det-tab vh-payment-pending d-flex bg-success flex-clm">
+            <section class="d-flex">
+              <h5 class="text-light">Hold Payments count</h5>
+            </section>
+            <section class="d-flex">
+              <i class="fas fa-money-check-alt text-warning" style="font-size: 70px"></i>
+            </section>
+            <section class="d-flex lead text-light"><h2 id="lblHoldPaymentCounts">13</h2></section>
+          </section>
+          </section>
+        </div>
+      </div>
+      <div class="vehicle-upper-right"></div>
+    </div>
+    <div class="vehicle-mid-lower">
+      <table class="table table-bordered table-hover table-dark" style="color: wheat;">
+        <thead>
+          <tr>
+            <th scope="col">Booking ID</th>
+            <th scope="col">Payment Date</th>
+            <th scope="col">Damage Waiver</th>
+            <th scope="col">Standard Payment</th>
+            <th scope="col">Excess</th>
+            <th scope="col">Excess Amount</th>
+            <th scope="col">Full Payment</th>
+          </tr>
+        </thead>
+        <tbody id="bk-payment-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script src="../../controllers/paymentController.js"></script>

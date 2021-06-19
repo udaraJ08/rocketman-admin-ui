@@ -137,3 +137,7 @@ footer {
   height: 100vh;
   padding-top: 50px;
 }
+
+tbody > tr {
+  cursor: pointer;
+}

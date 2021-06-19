@@ -1,0 +1,153 @@
+<link rel="stylesheet" href="../../css/customer.css" />
+
+<div class="customer-main-container center w-100 h-100">
+  <div class="customer-mid-container">
+    <div class="customer-mid-left">
+      <div class="customer-left-upper center">
+        <section class="customer-lft-upr-mid text-light center">
+          <section class="d-flex w-50 center">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="customer search..."
+                aria-label="customer search"
+                aria-describedby="basic-addon2"
+                id="inptCustomerSearch"
+              />
+              <div class="input-group-append">
+                <button class="btn btn-warning" type="button">
+                  search
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </section>
+          <section class="d-flex w-50 h-100 justify-content-end">
+            <section
+              class="
+                customer-count-container
+                center
+                h-100
+                w-75
+                d-flex
+                justify-content-between
+                bg-primary
+              "
+            >
+              <section
+                class="cst-lft-upr-right-left center flex-clm"
+                style="font-size: 50px"
+              >
+                <i class="fas fa-users text-light"></i>
+                <h4>count</h4>
+              </section>
+              <section
+                class="cst-lft-upr-right-left center"
+                style="font-size: 50px"
+              >
+                <h1 class="display-5" id="lblCustomerOrCount">0</h1>
+              </section>
+            </section>
+          </section>
+        </section>
+      </div>
+      <div class="customer-left-lower">
+        <table
+          class="table table-bordered table-hover all-customer-table table-dark"
+        >
+          <thead>
+            <tr>
+              <th scope="col">customer NIC</th>
+              <th scope="col">licence No</th>
+              <th scope="col">name</th>
+              <th scope="col">address</th>
+              <th scope="col">contact</th>
+            </tr>
+          </thead>
+          <tbody id="all-customer-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="customer-mid-right center">
+      <div class="customer-right-mid">
+        <section class="d-flex justify-content-between">
+          <section>
+            <p class="small">Customer NIC</p>
+            <h5
+              class="text-danger"
+              style="font-family: 'Poppins', sans-serif"
+              id="lblCustomerNIC"
+            >
+              200000902148
+            </h5>
+          </section>
+          <section>
+            <p class="small">Customer Name</p>
+            <h5
+              class=""
+              style="font-family: 'Poppins', sans-serif"
+              id="lblCustomerName"
+            >
+              Udara Janith wanniarachchi
+            </h5>
+          </section>
+        </section>
+        <hr />
+        <section class="d-flex justify-content-between">
+          <section>
+            <p class="small">Customer Address</p>
+            <h5
+              style="font-family: 'Poppins', sans-serif"
+              id="lblCustomerAddress"
+            >
+              Panadura
+            </h5>
+          </section>
+          <section>
+            <p class="small">Customer NIC</p>
+            <h5
+              style="font-family: 'Poppins', sans-serif"
+              id="lblCustomerContact"
+            >
+              078320121212
+            </h5>
+          </section>
+          <section>
+            <p class="small">Licence Number</p>
+            <h5
+              style="font-family: 'Poppins', sans-serif"
+              class="text-primary"
+              id="lblLicNo"
+            >
+              212121
+            </h5>
+          </section>
+        </section>
+        <hr />
+        <section class="d-flex justify-content-center flex-clm">
+          <p class="small">NIC image</p>
+          <img
+            class="bg-info"
+            src="../../assets/images/undraw_Playful_cat_re_bxiu.svg"
+            alt=""
+            width="100%"
+          />
+        </section>
+        <br />
+        <hr />
+        <section class="d-flex justify-content-between flex-clm">
+          <p class="small">Licence Image</p>
+          <img
+            class="bg-dark"
+            src="../../assets/images/undraw_Playful_cat_re_bxiu.svg"
+            alt=""
+            width="100%"
+          />
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../../controllers/customerController.js"></script>

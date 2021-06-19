@@ -1,0 +1,94 @@
+.driver-main-container {
+  background-image: linear-gradient(
+    to right,
+    #c4c4c4,
+    #c5c5c5,
+    #c6c6c6,
+    #c7c7c7,
+    #c8c8c8
+  );
+}
+
+.driver-mid-container {
+  width: 97%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.driver-mid-left {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.driver-mid-right {
+  width: 39%;
+  height: 100%;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.driver-left-lower {
+  width: 100%;
+  height: 70%;
+  background-color: #1e272e;
+}
+
+.driver-left-upper {
+  width: 100%;
+  height: 28%;
+  background-color: #dbdbdb;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+.driver-lft-upr-right {
+  width: 40%;
+  height: 90%;
+  border-radius: 10px;
+  display: flex;
+  text-shadow: 1px 1px 3px black;
+  box-shadow: 1px 1px 3px black;
+}
+
+.driver-lft-upr-left {
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+  justify-content: flex-end;
+  box-shadow: 1px 1px 3px black;
+}
+
+.drv-upr-rght-right {
+  flex-grow: 1;
+}
+
+.drv-upr-rght-left {
+  flex-grow: 1;
+}
+
+/* table styling */
+.all-driver-table {
+  color: wheat;
+}
+
+/* styling driver managing form */
+.driver-mid-form {
+  width: 98%;
+  height: 98%;
+  border-radius: 10px;
+  /* border: 2px dashed #008894; */
+  padding: 10px;
+  overflow: auto;
+  box-shadow: inset 2px 2px 3px black;
+}
+
+.driver-inpt {
+  text-align: left;
+  outline-color: #00b9ca;
+  border: 1px solid #00afbe;
+}

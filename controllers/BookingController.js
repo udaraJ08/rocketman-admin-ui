@@ -128,11 +128,11 @@ function setData(index) {
     $("#lblCustomerNIC").html(bookingData.customer.customer_NIC)
 
     $("#lblBookingType").html(bookingData.bookingType)
-    $("#lblBookedDate").html(date.toLocaleDateString(bookingData.bookingDate))
-    $("#lblDepDate").html(date.toLocaleDateString(bookingData.departureDate))
-    $("#lblReleaseDate").html(date.toLocaleDateString(bookingData.releaseDate))
+    $("#lblBookedDate").html(new Date(bookingData.bookingDate).toLocaleDateString())
+    $("#lblDepDate").html(new Date(bookingData.departureDate).toLocaleDateString())
+    $("#lblReleaseDate").html(new Date(bookingData.releaseDate).toLocaleDateString())
 
-    $("#lblArrDate").html(date.toLocaleDateString(bookingData.arrivalDate))
+    $("#lblArrDate").html(new Date(bookingData.arrivalDate).toLocaleDateString())
     $("#lblDepartureTime").html(bookingData.time)
     $("#lblStartMileage").html(bookingData.startMileage)
 

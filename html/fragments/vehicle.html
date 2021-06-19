@@ -1,0 +1,507 @@
+<link rel="stylesheet" href="../../css/vehicle.css" />
+
+<div class="vehicle-main-container w-100 h-100 center">
+  <div class="vehicle-mid-container d-flex justify-content-between">
+    <div class="vehicle-mid-left d-flex flex-clm justify-content-between">
+      <div class="vehicle-left-upper">
+        <section
+          class="
+            d-flex
+            justify-content-around
+            flex-clm
+            bg-light
+            align-items-center
+          "
+        >
+          <h4 class="vehicle-typ-topic">Vehicle count</h4>
+          <i class="vh-ico fas fa-car-alt display-6" style="color: #f0932b"></i>
+          <p class="display-6" id="lblAllVehicleCount">12</p>
+        </section>
+        <section
+          class="
+            d-flex
+            justify-content-around
+            bg-light
+            flex-clm
+            align-items-center
+          "
+        >
+          <h4 class="vehicle-typ-topic">Luxury</h4>
+          <i class="vh-ico fas fa-gem display-6 text-primary"></i>
+          <p class="display-6" id="lblLuxuryCount">12</p>
+        </section>
+        <section
+          class="
+            d-flex
+            justify-content-around
+            flex-clm
+            align-items-center
+            bg-light
+          "
+        >
+          <h4 class="vehicle-typ-topic">Premium</h4>
+          <i class="vh-ico fas fa-star-half-alt display-6 text-success"></i>
+          <p class="display-6" id="lblPremiumCount">12</p>
+        </section>
+        <section
+          class="
+            d-flex
+            justify-content-around
+            flex-clm
+            align-items-center
+            bg-light
+          "
+        >
+          <h4 class="vehicle-typ-topic">General</h4>
+          <i class="vh-ico fas fa-cloud-moon display-6 text-danger"></i>
+          <p class="display-6" id="lblGeneralCount">12</p>
+        </section>
+      </div>
+      <div class="vehicle-left-middle">
+        <section class="center bg-primary">
+          <div class="input-group mb-3 p-5">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Recipient's username"
+              aria-label="Recipient's username"
+              aria-describedby="basic-addon2"
+              id="inptVehicleSearch"
+            />
+            <div class="input-group-append">
+              <button class="btn btn-warning" type="button">
+                Button
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </section>
+        <button
+          class="btn btn-success"
+          data-toggle="modal"
+          data-target="#exampleModal"
+          style="flex-grow: 0.8"
+          id="btnAddVehicle"
+        >
+          <p class="lead">Add new Vehicle</p>
+          <i class="fas fa-car-alt display-6"></i>
+        </button>
+      </div>
+      <div class="vehicle-left-lower">
+        <table
+          class="table table-bordered table-hover all-customer-table table-dark"
+          style="color: wheat"
+        >
+          <thead>
+            <tr>
+              <th scope="col">Vehicle Number</th>
+              <th scope="col">Brand</th>
+              <th scope="col">Transmission</th>
+              <th scope="col">Fuel Type</th>
+              <th scope="col">Car Type</th>
+            </tr>
+          </thead>
+          <tbody id="all-vehicle-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="vehicle-mid-right center">
+      <div class="vehicle-right-mid">
+        <hr />
+        <section class="d-flex justify-content-between">
+          <section>
+            <p class="small">Vehicle Number</p>
+            <h5 id="lblVehicleNumber" class="text-danger">CV-0192</h5>
+          </section>
+          <section>
+            <section>
+              <p class="small">Brand Name</p>
+              <h5 id="lblBrandName" class="text-primary">suzuki alto</h5>
+            </section>
+          </section>
+          <section>
+            <section>
+              <p class="small">type</p>
+              <h5 id="lblType" class="text-success">luxury</h5>
+            </section>
+          </section>
+        </section>
+        <br />
+        <section class="d-flex justify-content-between">
+          <section>
+            <p class="small">Transmission</p>
+            <h5 id="lblTransmission">Auto</h5>
+          </section>
+          <section>
+            <section>
+              <p class="small">color</p>
+              <h5 id="lblColor">black</h5>
+            </section>
+          </section>
+          <section>
+            <section>
+              <p class="small">fuel type</p>
+              <h5 id="lblFuelType">patrol</h5>
+            </section>
+          </section>
+        </section>
+        <br />
+        <section class="d-flex justify-content-center">
+          <section class="center flex-clm">
+            <p class="small">number of passengers</p>
+            <h5 id="lblNumberOfPassengers">5</h5>
+          </section>
+        </section>
+        <br />
+        <hr />
+        <section>
+          <section class="d-flex justify-content-between">
+            <section>
+              <p class="small">Daily rental</p>
+              <h5 class="text-primary">
+                Rs.<span id="lblDailyRental">2400</span>/=
+              </h5>
+            </section>
+            <section>
+              <p class="small">monthly rental</p>
+              <h5 class="text-success">
+                Rs.<span id="lblMonthlyRental">64500</span>/=
+              </h5>
+            </section>
+            <section>
+              <p class="small">damage waiver</p>
+              <h5 class="text-danger">
+                Rs.<span id="lblDmgWaiver">20000</span>/=
+              </h5>
+            </section>
+          </section>
+          <br />
+          <section class="d-flex justify-content-around">
+            <section class="center flex-clm">
+              <p class="small">excess amount</p>
+              <h5 class="">Rs.<span id="lblExcesForDay">30</span>/=</h5>
+            </section>
+          </section>
+          <br />
+          <section class="d-flex justify-content-around">
+            <section>
+              <p class="small">Free mileage for day</p>
+              <h5><span id="lblFreeMgForDay">100</span>km</h5>
+            </section>
+            <section>
+              <p class="small">Free mileage for month</p>
+              <h5><span id="lblFreeMgForMonth">2400</span>km</h5>
+            </section>
+          </section>
+        </section>
+        <br />
+        <hr />
+        <section class="vehicle-slider center">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide w-100 h-100"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="2"
+              ></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active bg-primary">
+                <img
+                  class="d-block w-100"
+                  src="../../assets/images/undraw_Playful_cat_re_bxiu.svg"
+                  alt="First slide"
+                />
+              </div>
+              <div class="carousel-item bg-dark">
+                <img
+                  class="d-block w-100"
+                  src="../../assets/images/undraw_Playful_cat_re_bxiu.svg"
+                />
+              </div>
+              <div class="carousel-item bg-dark">
+                <img
+                  class="d-block w-100"
+                  src="../../assets/images/undraw_Playful_cat_re_bxiu.svg"
+                />
+              </div>
+              <div class="carousel-item bg-danger">
+                <img
+                  class="d-block w-100"
+                  src="../../assets/images/undraw_Playful_cat_re_bxiu.svg"
+                />
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </section>
+        <hr />
+        <section class="d-flex justify-content-center">
+          <button class="btn btn-danger" id="btnVehicleRemove">REMOVE</button>
+          &nbsp; &nbsp;
+          <button
+            class="btn btn-success"
+            data-toggle="modal"
+            data-target="#exampleModal"
+            id="btnVehicleUpdate"
+          >
+            UPDATE
+          </button>
+          &nbsp; &nbsp;
+          <button class="btn btn-primary" id="btnVehicleClearAll">
+            CLEAR <i class="fas fa-sync"></i>
+          </button>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Vehicle Add modal -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content bg-primary">
+      <section class="modal-header bg-primary">
+        <h2 class="text-light">
+          <i class="vh-ico fas fa-car-alt display-6 text-danger"></i>
+          Vehicle Details
+        </h2>
+      </section>
+      <div class="vehicle-model center">
+        <div class="vehicle-model-mid bg-light p-3">
+          <section class="vh-model-input-sec">
+            <section>
+              <label for="inptVehicleNumber" class="form-label"
+                >Vehicle Number</label
+              ><br />
+              <input
+                class="input-group-text vehicle-model-inpt"
+                type="text"
+                id="inptVehicleNumber"
+              />
+            </section>
+            <section>
+              <label for="inptBrandName" class="form-label">Brand Name</label
+              ><br />
+              <input
+                type="text"
+                id="inptBrandName"
+                class="input-group-text vehicle-model-inpt"
+              />
+            </section>
+          </section>
+          <br />
+          <section class="vh-model-input-sec">
+            <section>
+              <label for="chkGear" class="form-label">Gear</label>
+              &nbsp;
+              <input
+                type="checkbox"
+                class="form-check-input vehicle-model-inpt"
+                id="chkGear"
+              />
+            </section>
+            <section>
+              <label for="chkManual" class="form-label">Manual</label>
+              &nbsp;
+              <input
+                type="checkbox"
+                class="form-check-input vehicle-model-inpt"
+                id="chkManual"
+              />
+            </section>
+            <section>
+              <label for="inptColor" class="form-label">Color</label><br />
+              <input
+                type="text"
+                id="inptColor"
+                class="input-group-text vehicle-model-inpt"
+              />
+            </section>
+          </section>
+          <br />
+          <section class="vh-model-input-sec">
+            <section>
+              <label for="chkPetrol" class="form-label">petrol</label>
+              &nbsp;
+              <input
+                type="checkbox"
+                class="form-check-input vehicle-model-inpt"
+                id="chkPetrol"
+              />
+            </section>
+            <section>
+              <label for="chkDiesal" class="form-label">Diesal</label>
+              &nbsp;
+              <input
+                type="checkbox"
+                class="form-check-input border-primary vehicle-model-inpt"
+                id="chkDiesal"
+                class="input-group-text"
+              />
+            </section>
+            <section>
+              <label for="inptNumberOfPasseneger" class="form-label"
+                >Number of Passengers</label
+              ><br />
+              <input
+                type="number"
+                id="inptNumberOfPasseneger"
+                class="input-group-text vehicle-model-inpt"
+              />
+            </section>
+          </section>
+          <br />
+          <hr />
+          <section class="vh-model-input-sec">
+            <section>
+              <label for="chkLuxury" class="form-label">Luxury</label>
+              &nbsp;
+              <input
+                type="checkbox"
+                class="form-check-input vehicle-model-inpt"
+                id="chkLuxury"
+              />
+            </section>
+            <section>
+              <label for="chkPremium" class="form-label">Premium</label>
+              &nbsp;
+              <input
+                type="checkbox"
+                class="form-check-input vehicle-model-inpt"
+                id="chkPremium"
+              />
+            </section>
+            <section>
+              <label for="chkGeneral" class="form-label">General</label>
+              &nbsp;
+              <input
+                type="checkbox"
+                class="form-check-input vehicle-model-inpt"
+                id="chkGeneral"
+                class="input-group-text vehicle-model-inpt"
+              />
+            </section>
+          </section>
+          <hr />
+          <br />
+          <section class="vh-model-input-sec">
+            <section>
+              <label for="inptDailyRental" class="form-label"
+                >Daily rental</label
+              ><br />
+              <input
+                type="number"
+                id="inptDailyRental"
+                class="input-group-text vehicle-model-inpt"
+              />
+            </section>
+            <section>
+              <label for="inptMonthlyRental" class="form-label"
+                >Monthly rental</label
+              ><br />
+              <input
+                type="number"
+                id="inptMonthlyRental"
+                class="input-group-text vehicle-model-inpt"
+              />
+            </section>
+          </section>
+          <br />
+          <section class="vh-model-input-sec">
+            <section>
+              <label for="inptFreeMilgForDay" class="form-label"
+                >Free mileage for Day</label
+              ><br />
+              <input
+                type="number"
+                id="inptFreeMilgForDay"
+                class="input-group-text vehicle-model-inpt"
+              />
+            </section>
+            <section>
+              <label for="inptFreeMilgForMonth" class="form-label"
+                >Free mileage for month</label
+              ><br />
+              <input
+                type="number"
+                id="inptFreeMilgForMonth"
+                class="input-group-text vehicle-model-inpt"
+              />
+            </section>
+          </section>
+          <br />
+          <section class="vh-model-input-sec">
+            <section>
+              <label for="inptExcessAmount">Excess Amount (per 1km)</label
+              ><br />
+              <input
+                type="number"
+                id="inptExcessAmount"
+                class="input-group-text vehicle-model-inpt"
+              />
+            </section>
+            <section>
+              <label for="inptDamagewaiver">Damage Waiver</label><br />
+              <input
+                type="number"
+                id="inptDamagewaiver"
+                class="input-group-text vehicle-model-inpt w-100"
+              />
+            </section>
+          </section>
+          <hr />
+          <section class="vh-model-input-sec d-flex justify-content-end">
+            <button class="btn btn-primary w-25" id="btnVehicleManage">
+              MANAGE
+            </button>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../../controllers/vehicleController.js"></script>

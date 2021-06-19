@@ -1,0 +1,121 @@
+.payment-main-container {
+  background-image: linear-gradient(
+    to right,
+    #c4c4c4,
+    #c5c5c5,
+    #c6c6c6,
+    #c7c7c7,
+    #c8c8c8
+  );
+}
+
+.payment-mid-container {
+  width: 97%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.vehicle-mid-upper {
+  width: 100%;
+  height: 52%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.vehicle-upper-left {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.vh-up-lft-upper {
+  width: 100%;
+  height: 30%;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  display: flex;
+}
+
+.vh-up-lft-upper > section {
+  width: 97%;
+  height: 60%;
+}
+
+.payment-cal {
+  border: none;
+  outline: none;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgb(70, 70, 70);
+  border-radius: 10px;
+}
+
+.vh-up-lft-lower {
+  width: 100%;
+  height: 68%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-det-tab {
+  width: 30%;
+  height: 100%;
+  background-color: #f0f0f0;
+  box-shadow: 1px 1px 5px black;
+  border-radius: 10px;
+}
+
+.vh-payment-count {
+}
+.vh-payment-amount {
+}
+.vh-payment-pending {
+}
+
+.vehicle-upper-right {
+  width: 38%;
+  height: 100%;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.vehicle-mid-lower {
+  width: 100%;
+  height: 45%;
+  background-color: #435261;
+  border-radius: 10px;
+}
+
+.payment-det-tab {
+  font-family: "Poppins", sans-serif;
+}
+
+.payment-det-tab > section:nth-child(1) {
+  color: #353b48;
+  width: 100%;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-det-tab > section:nth-child(2) {
+  width: 100%;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 3px 3px 3px black;
+  color: #353b48;
+}
+
+.payment-det-tab > section:nth-child(3) {
+  color: #353b48;
+  width: 100%;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
