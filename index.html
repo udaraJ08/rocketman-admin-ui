@@ -15,6 +15,20 @@
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     />
 
+    <!-- (loader-name) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- (loader-welcome) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font importing over -->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -27,7 +41,13 @@
     <title>Rocketman</title>
   </head>
   <body>
-    <nav>
+    <div class="admin-loader center flex-clm">
+      <i class="fas fa-rocket rocket-ico display-6 text-info"></i>
+      <h1 id="loader-brand">Rocketman</h1>
+      <br />
+      <p id="loader-brand-welcome">Drive safe with us...</p>
+    </div>
+    <nav class="d-flex justify-content-between">
       <section class="brand-section d-flex">
         <section class="brand-left center">
           <img
@@ -41,7 +61,19 @@
           <h1>ROCKETMAN</h1>
         </section>
       </section>
-      <section class="nav-section"></section>
+      <section
+        class="nav-section d-flex justify-content-between align-items-center"
+      >
+        <section class="center h-100 flex-grow" style="flex-grow: 1">
+          <i class="nav-ico far fa-envelope display-6 text-warning"></i>
+        </section>
+        <section class="center h-100 flex-grow flex-clm" style="flex-grow: 1">
+          <i class="nav-ico far fa-user-circle text-light display-6"></i>
+        </section>
+        <section class="center h-100 flex-grow" style="flex-grow: 1">
+          <i class="nav-ico fas fa-sign-out-alt display-6 text-danger"></i>
+        </section>
+      </section>
     </nav>
     <div class="side-bar flex-column">
       <section class="side-section center flex-column">

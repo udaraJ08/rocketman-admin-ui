@@ -1,7 +1,151 @@
 <link rel="stylesheet" href="../../css/main-dashboard.css" />
 
-<div class="main-dashboard-main-container w-100 h-100 bg-success center">
-  <h1>This is the Main-DASHBOARD</h1>
-</div>
+<div class="main-dashboard-main-container w-100 h-100 center">
+  <div class="mn-db-mid-container">
+    <div class="mn-db-mid-left">
+      <div class="mn-db-left-upper">
+        <section class="db-data-tabs">
+          <section class="data-tabs-left bg-danger mr-3">
+            <i class="fas fa-book-open display-6"></i>
+            <h5>Booking count</h5>
+          </section>
+          <section class="data-tabs-right">
+            <h5 class="display-5" id="lblDbBookingCount">12</h5>
+          </section>
+        </section>
+        <section class="db-data-tabs">
+          <section class="data-tabs-left bg-primary">
+            <i class="fas fa-book display-6 mt-2"></i>
+            <h5 class="text-center">
+              Booking Hold <br />
+              count
+            </h5>
+          </section>
+          <section class="data-tabs-right">
+            <h class="display-5" id="lblHoldCount">12</h>
+          </section>
+        </section>
+        <section class="db-data-tabs">
+          <section class="data-tabs-left bg-success">
+            <i class="fas fa-car-alt display-6"></i>
+            <h5 class="text-center">Vehicle count</h5>
+          </section>
+          <section class="data-tabs-right">
+            <h5 class="display-5" id="lblDbVehicleCount">12</h5>
+          </section>
+        </section>
+        <section class="db-data-tabs">
+          <section class="data-tabs-left" style="background-color: #284ad3">
+            <i class="fas fa-users display-6"></i>
+            <h5>Customer count</h5>
+          </section>
+          <section class="data-tabs-right">
+            <h5 class="display-5" id="lblDbCustomerCount">12</h5>
+          </section>
+        </section>
+        <section class="db-data-tabs">
+          <section class="data-tabs-left" style="background-color: #fa8231">
+            <i class="fas fa-user-astronaut display-6"></i>
+            <h5>Driver count</h5>
+          </section>
+          <section class="data-tabs-right">
+            <h5 class="display-5" id="lblDbDriverCount">12</h5>
+          </section>
+        </section>
+        <section class="db-data-tabs">
+          <section class="data-tabs-left" style="background-color: #82589f">
+            <i class="fas fa-coins display-6"> </i>
+            <h5>Today Profit</h5>
+          </section>
+          <section class="data-tabs-right">
+            <h5 class="lead" id="lblDbProfit">120000.00</h5>
+          </section>
+        </section>
+      </div>
+      <div class="mn-db-left-lower">
+        <table
+          class="table table-bordered table-hover table-dark"
+          style="color: wheat"
+        >
+          <thead>
+            <tr>
+              <th scope="col">Booking ID</th>
+              <th scope="col">Customer NIC</th>
+              <th scope="col">Driver NIC</th>
 
-<script src="../../controllers/dashboardController.js"></script>
+              <th scope="col">Vehicle Number</th>
+              <th scope="col">Departure date</th>
+              <th scope="col">departure time</th>
+
+              <th scope="col">arrival Date</th>
+              <th scope="col">duration</th>
+            </tr>
+          </thead>
+          <tbody id="db-booking-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="mn-db-mid-right">
+      <div class="mn-db-right-upper center">
+        <div class="mn-db-right-lower-mid">
+          <section class="d-flex align-items-center">
+            &nbsp; &nbsp;
+            <h5 class="lead text-light">&star; Today Driver Schedule</h5>
+          </section>
+          <hr />
+          <section class="db-bk-vehicle-sec bg-light">
+            <table
+              class="
+                table table-bordered
+                border-secondary
+                table-hover
+                text-dark
+              "
+            >
+              <thead>
+                <tr>
+                  <th scope="col">driver NIC</th>
+                  <th scope="col">name</th>
+                  <th scope="col">Booking Time</th>
+                  <th scope="col">V_number</th>
+                </tr>
+              </thead>
+              <tbody id="db-driver-tbody"></tbody>
+            </table>
+          </section>
+        </div>
+      </div>
+      <div class="mn-db-right-lower bg-dark center">
+        <div class="mn-db-right-lower-mid">
+          <section class="d-flex align-items-center">
+            &nbsp; &nbsp;
+            <h1 class="lead text-light">&star; Today Vehicle Schedule</h1>
+          </section>
+          <hr />
+          <section class="db-bk-vehicle-sec bg-light">
+            <table
+              class="
+                table table-bordered
+                border-secondary
+                table-hover
+                text-dark
+              "
+            >
+              <thead>
+                <tr>
+                  <th scope="col">v.Number</th>
+                  <th scope="col">Booking Time</th>
+                  <th scope="col">v.type</th>
+                  <th scope="col">Driver</th>
+                </tr>
+              </thead>
+              <tbody id="db-vehicle-tbody"></tbody>
+            </table>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../controllers/dashboardController.js"></script>
+</div>

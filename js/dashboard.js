@@ -20,9 +20,15 @@ let bookingTableLoad = false
 ////true = update
 let vehicleUpdateOrAdd = false
 
+$(window).on('load', function (e) {
+    $(".admin-loader").delay(3000).slideUp({
+        duration: 1000,
+    })
+})
+
 $(document).ready(() => {
     $.ajax({
-        url: "../html/fragments/payment.html",
+        url: "../html/fragments/dashboard.html",
         success: function (result) {
             $(".panel-container").html(result);
         }

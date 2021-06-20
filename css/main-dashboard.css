@@ -1,0 +1,129 @@
+.main-dashboard-main-container {
+  /* background-image: linear-gradient(
+    to right,
+    #c4c4c4,
+    #c5c5c5,
+    #c6c6c6,
+    #c7c7c7,
+    #c8c8c8
+  ); */
+  background-color: #ecf0f1;
+}
+
+.mn-db-mid-container {
+  width: 97%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mn-db-mid-left {
+  width: 63%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.mn-db-mid-right {
+  width: 36%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.mn-db-left-upper {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mn-db-left-lower {
+  width: 100%;
+  height: 53%;
+  background-color: #1e272e;
+  border-radius: 10px;
+}
+
+.mn-db-right-lower {
+  width: 100%;
+  height: 50%;
+  background-image: linear-gradient(
+    to right bottom,
+    #5b5b5b,
+    #545354,
+    #4d4b4c,
+    #464344,
+    #403b3b
+  );
+  border-radius: 10px;
+}
+
+.mn-db-right-upper {
+  width: 100%;
+  height: 49%;
+  background-image: linear-gradient(
+    to right bottom,
+    #5b5b5b,
+    #545354,
+    #4d4b4c,
+    #464344,
+    #403b3b
+  );
+  border-radius: 10px;
+}
+
+.db-data-tabs {
+  width: 32%;
+  height: 45%;
+  background-color: #ecf0f1;
+  border-radius: 5px;
+  display: flex;
+  background-image: linear-gradient(
+    to right bottom,
+    #2c2c2c,
+    #2e2e2e,
+    #313131,
+    #333333,
+    #363636
+  );
+}
+
+.data-tabs-left {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-grow: 1.3;
+  box-shadow: inset 2px 2px 5px black;
+  border-radius: 5px;
+  flex-direction: column;
+  color: whitesmoke;
+  text-shadow: 1px 1px 3px black;
+  /* border-radius: 5px 0px 100px 5px; */
+  clip-path: polygon(0 0, 57% 0, 100% 100%, 0% 100%);
+}
+
+.data-tabs-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  color: wheat;
+}
+
+.mn-db-right-lower-mid {
+  width: 96%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.db-bk-vehicle-sec {
+  width: 100%;
+  height: 78%;
+  overflow: auto;
+}
