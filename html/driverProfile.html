@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    />
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.js"></script>
+
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/driverProfile.css" />
+    <title>Rocketman(driver)</title>
+  </head>
+  <nav class="d-flex justify-content-between">
+    <section class="brand-section d-flex">
+      <section class="brand-left center bg-dark">
+        <img
+          id="brand-logo"
+          src="../assets/icons/shuttle.png"
+          width="40%"
+          alt=""
+        />
+      </section>
+      <section class="brand-right justify-content-start center">
+        <h1 class="text-light">ROCKETMAN</h1>
+      </section>
+    </section>
+  </nav>
+  <body>
+    <div class="main-container center">
+      <div class="mid-container">
+        <div class="left-container">
+          <div class="left-upper">
+            <section class="lft-upper-left center">
+              <section class="upper-lft-mid center justify-content-around">
+                <input
+                  type="date"
+                  class="calender bg-primary"
+                  id="clndrStartDate"
+                />
+                <input
+                  type="date"
+                  class="calender bg-danger"
+                  id="clndrEndDate"
+                />
+                <button class="btn btn-outline-success" id="btnTodaySchedule">
+                  Today <br />
+                  Schedule
+                </button>
+              </section>
+            </section>
+            <section class="lft-upper-right center">
+              <section class="driver-trips">
+                <section class="trips-left bg-success center">
+                  <i
+                    class="fas fa-user-astronaut display-2 mb-2 text-warning"
+                  ></i>
+                  <h2 class="text-light" id="lblTripCount">20</h2>
+                </section>
+                <section class="trips-right bg-success center">
+                  <h3 class="text-center text-light">
+                    All the<br />
+                    trips
+                  </h3>
+                </section>
+              </section>
+            </section>
+          </div>
+          <div class="left-lower">
+            <table
+              class="
+                table table-bordered table-hover table-dark
+                all-driver-table
+              "
+            >
+              <thead>
+                <tr>
+                  <th scope="col">bookingID</th>
+                  <th scope="col">dept. date</th>
+                  <th scope="col">arr. date</th>
+                  <th scope="col">dept. time</th>
+                  <th scope="col">vehicle number</th>
+                  <th scope="col">duration</th>
+                </tr>
+              </thead>
+              <tbody id="driver-shedule-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="right-container center bg-primary">
+          <div
+            class="
+              right-mid-container
+              center
+              flex-column
+              justify-content-between
+              bg-light
+            "
+          >
+            <section class="right-mid-upper center justify-content-start">
+              <h1 class="display-6">
+                Welcome <span class="lblDriverName">Gathsara</span> !!!
+              </h1>
+            </section>
+            <section class="right-mid-lower center">
+              <section class="rght-lower-mid d-flex justify-content-end">
+                <section class="center justify-content-between">
+                  <section class="w-25">
+                    <h5 class="lead">Name</h5>
+                  </section>
+                  <section class="w-75">
+                    <h5 class="lead" id="lblDriverName">Gathsara Kumaraya</h5>
+                  </section>
+                </section>
+                <section class="center justify-content-between">
+                  <section class="w-25">
+                    <h5 class="lead">NIC</h5>
+                  </section>
+                  <section class="w-75">
+                    <h5 class="lead" id="lblNic">20000901211</h5>
+                  </section>
+                </section>
+                <section class="center justify-content-between">
+                  <section class="w-25">
+                    <h5 class="lead">Address</h5>
+                  </section>
+                  <section class="w-75">
+                    <h5 class="lead" id="lblAddress">Raththaran puraya</h5>
+                  </section>
+                </section>
+                <section class="center justify-content-between">
+                  <section class="w-25 lead">
+                    <h5 class="lead">Contact</h5>
+                  </section>
+                  <section class="w-75">
+                    <h5 class="lead" id="lblContact">078324121</h5>
+                  </section>
+                </section>
+                <section class="center justify-content-between">
+                  <section class="w-25"><h5 class="lead">Email</h5></section>
+                  <section class="w-75">
+                    <h5 class="lead" id="lblEmail">gathsara@gmail.com</h5>
+                  </section>
+                </section>
+              </section>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer></footer>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="../controllers/driver-user.js"></script>
+</html>

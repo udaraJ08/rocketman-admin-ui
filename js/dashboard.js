@@ -117,6 +117,11 @@ $("#btnCustomerView").on('click', () => {
     slider()
 })
 
+$("#btnLogOut").on('click', () => {
+    window.location.href = '../html/driverProfile.html?nic=2000012121';
+    return false;
+})
+
 function slider() {
 
     $(".side-bar").animate({

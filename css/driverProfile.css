@@ -1,0 +1,149 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  background-image: linear-gradient(
+    to right,
+    #c4c4c4,
+    #c5c5c5,
+    #c6c6c6,
+    #c7c7c7,
+    #c8c8c8
+  );
+}
+
+.mid-container {
+  width: 97%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ////////left container start////// */
+.left-container {
+  width: 60%;
+  height: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.left-upper {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lft-upper-left {
+  width: 60%;
+  height: 100%;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+}
+
+.lft-upper-right {
+  width: 39%;
+  height: 100%;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+}
+
+.upper-lft-mid {
+  width: 95%;
+  height: 70%;
+}
+
+.calender {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgb(87, 86, 86);
+  cursor: pointer;
+}
+
+.driver-trips {
+  width: 90%;
+  height: 80%;
+  background-color: crimson;
+  display: flex;
+  box-shadow: 1px 2px 5px black;
+}
+
+.trips-left {
+  width: 50%;
+  height: 100%;
+  background-color: crimson;
+  display: flex;
+  flex-direction: column;
+}
+
+.trips-right {
+  width: 50%;
+  height: 100%;
+}
+
+.fa-user-astronaut {
+  text-shadow: 1px 2px 3px black;
+}
+
+.left-lower {
+  width: 100%;
+  height: 69%;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+}
+/* //////////left container end///// */
+
+.right-container {
+  width: 39%;
+  height: 100%;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+}
+
+.right-mid-container {
+  width: 95%;
+  height: 95%;
+  box-shadow: 2px 2px 4px black inset;
+}
+
+.right-mid-upper {
+  width: 100%;
+  height: 20%;
+  padding-left: 20px;
+  border-bottom: 2px dashed black;
+}
+
+.right-mid-lower {
+  width: 100%;
+  height: 80%;
+}
+
+.rght-lower-mid {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.rght-lower-mid > section {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+}

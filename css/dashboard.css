@@ -44,39 +44,6 @@
   font-size: 30px;
 }
 /* ////////loader finished////// */
-
-nav {
-  width: 100%;
-  position: fixed;
-  height: 10vh;
-  background-image: linear-gradient(
-    to right,
-    #494bcb,
-    #4e4ed7,
-    #5452e3,
-    #5a55ef,
-    #6058fb
-  );
-  background-color: cr;
-  box-shadow: 2px 2px 10px black;
-}
-
-.nav-section {
-  width: 20%;
-}
-
-.nav-ico {
-  cursor: pointer;
-  text-shadow: 1px 2px 3px black;
-  transition: 0.3s;
-}
-
-.nav-ico:hover {
-  transition: 0.5s;
-  transform: scale(1.2, 1.2);
-  /* animation-duration: 1s; */
-}
-
 /* ////////////////////// */
 
 .main-container {
@@ -178,22 +145,6 @@ nav {
 
 .admin-brand {
   text-shadow: 2px 5px 5px black;
-}
-
-footer {
-  width: 100%;
-  position: fixed;
-  height: 3vh;
-  background-image: linear-gradient(
-    to right,
-    #494bcb,
-    #4e4ed7,
-    #5452e3,
-    #5a55ef,
-    #6058fb
-  );
-  box-shadow: 2px 2px 10px black;
-  bottom: 0px;
 }
 
 .panel-container {
