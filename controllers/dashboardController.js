@@ -102,10 +102,10 @@ function renderTodayBookingTable(data) {
                 <td>${element.driver.driver_NIC}</td>
 
                 <td>${element.vehicle.vehicleNumber}</td>
-                <td>${element.departureDate}</td>
+                <td>${new Date(element.departureDate).toLocaleDateString()}</td>
                 <td>${element.time}</td>
 
-                <td>${element.arrivalDate}</td>
+                <td>${new Date(element.arrivalDate).toLocaleDateString()}</td>
                 <td>${element.duration}</td>
             </tr>
         `
