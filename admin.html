@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    />
+    <!-- importing fonts -->
+
+    <!-- (loader-name) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- (loader-welcome) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font importing over -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.js"></script>
+
+    <link rel="stylesheet" href="./css/dashboard.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <title>Rocketman</title>
+  </head>
+  <body>
+    <div class="admin-loader center flex-clm">
+      <i class="fas fa-rocket rocket-ico display-6 text-info"></i>
+      <h1 id="loader-brand">Rocketman</h1>
+      <br />
+      <p id="loader-brand-welcome">Drive safe with us...</p>
+    </div>
+    <nav class="d-flex justify-content-between">
+      <section class="brand-section d-flex">
+        <section class="brand-left center">
+          <img
+            id="brand-logo"
+            src="./assets/icons/shuttle.png"
+            width="40%"
+            alt=""
+          />
+        </section>
+        <section class="brand-right center">
+          <h1>ROCKETMAN</h1>
+        </section>
+      </section>
+      <section
+        class="nav-section d-flex justify-content-between align-items-center"
+      >
+        <section class="center h-100 flex-grow" style="flex-grow: 1">
+          <i class="nav-ico far fa-envelope display-6 text-warning"></i>
+        </section>
+        <section class="center h-100 flex-grow flex-clm" style="flex-grow: 1">
+          <i class="nav-ico far fa-user-circle text-light display-6"></i>
+        </section>
+        <section class="center h-100 flex-grow" style="flex-grow: 1">
+          <i
+            class="nav-ico fas fa-sign-out-alt display-6 text-danger"
+            id="btnLogOut"
+          ></i>
+        </section>
+      </section>
+    </nav>
+    <div class="side-bar flex-column">
+      <section class="side-section center flex-column">
+        <i class="fas fa-users-cog mb-3"></i>
+        <h1 class="admin-brand" style="color: #94cbf0">ADMIN</h1>
+      </section>
+      <section class="side-section center">
+        <section class="w-75 d-flex justify-content-around flex-column h-100">
+          <button
+            id="btnBookingHold"
+            class="
+              btn btn-outline-info
+              anime-btn
+              d-flex
+              justify-content-between
+              align-items-center
+            "
+          >
+            Hold bookings
+            <i class="fas fa-book"></i>
+          </button>
+          <button
+            class="
+              btn btn-outline-info
+              anime-btn
+              d-flex
+              justify-content-between
+              align-items-center
+            "
+            id="bookingBtn"
+          >
+            Bookings
+            <i class="fas fa-book-open"></i>
+          </button>
+          <button
+            id="btnPaymentView"
+            class="
+              btn btn-outline-info
+              anime-btn
+              d-flex
+              justify-content-between
+              align-items-center
+            "
+          >
+            Payments
+            <i class="fas fa-coins"></i>
+          </button>
+          <button
+            id="btnVehiclesView"
+            class="
+              btn btn-outline-info
+              anime-btn
+              d-flex
+              justify-content-between
+              align-items-center
+            "
+          >
+            vehicles
+            <i class="fas fa-car-alt"></i>
+          </button>
+          <button
+            id="btnCustomerView"
+            class="
+              btn btn-outline-info
+              anime-btn
+              d-flex
+              justify-content-between
+              align-items-center
+            "
+          >
+            customers
+            <i class="fas fa-users"></i>
+          </button>
+          <button
+            id="btnDriversView"
+            class="
+              btn btn-outline-info
+              anime-btn
+              d-flex
+              justify-content-between
+              align-items-center
+            "
+          >
+            drivers
+            <i class="fas fa-user-astronaut"></i>
+          </button>
+        </section>
+      </section>
+      <section class="side-section"></section>
+    </div>
+    <div class="panel-container"></div>
+    <i class="far fa-arrow-alt-circle-left" id="backBtn"></i>
+    <footer></footer>
+  </body>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="./js/dashboard.js"></script>
+</html>

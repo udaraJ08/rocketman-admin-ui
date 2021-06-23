@@ -1,3 +1,9 @@
+$(window).on('load', function (e) {
+    $(".admin-loader").delay(3000).slideUp({
+        duration: 1000,
+    })
+})
+
 $(document).ready(() => {
     // getDriver()
     getDriverDetails()

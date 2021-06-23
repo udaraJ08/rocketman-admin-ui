@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
@@ -13,164 +14,141 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     />
-    <!-- importing fonts -->
-
-    <!-- (loader-name) -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- (loader-welcome) -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lobster&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- font importing over -->
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
+    <!-- importing fonts start -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sulphur+Point&display=swap"
+      rel="stylesheet"
+    />
+    <!-- importing fonts end-->
+
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.js"></script>
 
-    <link rel="stylesheet" href="./css/dashboard.css" />
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <title>Rocketman</title>
+    <title>LOGIN</title>
   </head>
   <body>
-    <div class="admin-loader center flex-clm">
-      <i class="fas fa-rocket rocket-ico display-6 text-info"></i>
-      <h1 id="loader-brand">Rocketman</h1>
-      <br />
-      <p id="loader-brand-welcome">Drive safe with us...</p>
+    <div class="container" id="container">
+      <div class="form-container sign-in-container">
+        <form id="frmAdminLogin">
+          <h1 class="text-primary">Sign in</h1>
+          <br />
+          <input type="text" placeholder="Username" id="inptUsername" />
+          <br />
+          <input type="password" placeholder="Password" id="inptPassword" />
+          <br />
+          <section class="d-flex justify-content-between w-75">
+            <section class="text-danger">
+              <i class="fas fa-user-shield"></i>
+              <h6 for="chkAdmin">Admin</h6>
+              <input class="form-check-input" type="checkbox" id="chkAdmin" />
+            </section>
+            <section class="text-success">
+              <i class="fas fa-user-astronaut"></i>
+              <h6 for="chkDriver">Driver</h6>
+              <input class="form-check-input" type="checkbox" id="chkDriver" />
+            </section>
+          </section>
+          <br />
+          <button>Sign In</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-right">
+            <i class="fas fa-rocket rocket-ico display-6 text-light"></i>
+            <h1>Rocketman</h1>
+            <p>Turning miles into smiles...</p>
+            <button
+              class="btn btn-outline-light"
+              data-target="#mdlSignup"
+              data-toggle="modal"
+              id="btnSignup"
+            >
+              Driver Signup
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-    <nav class="d-flex justify-content-between">
-      <section class="brand-section d-flex">
-        <section class="brand-left center">
-          <img
-            id="brand-logo"
-            src="./assets/icons/shuttle.png"
-            width="40%"
-            alt=""
-          />
-        </section>
-        <section class="brand-right center">
-          <h1>ROCKETMAN</h1>
-        </section>
-      </section>
-      <section
-        class="nav-section d-flex justify-content-between align-items-center"
-      >
-        <section class="center h-100 flex-grow" style="flex-grow: 1">
-          <i class="nav-ico far fa-envelope display-6 text-warning"></i>
-        </section>
-        <section class="center h-100 flex-grow flex-clm" style="flex-grow: 1">
-          <i class="nav-ico far fa-user-circle text-light display-6"></i>
-        </section>
-        <section class="center h-100 flex-grow" style="flex-grow: 1">
-          <i
-            class="nav-ico fas fa-sign-out-alt display-6 text-danger"
-            id="btnLogOut"
-          ></i>
-        </section>
-      </section>
-    </nav>
-    <div class="side-bar flex-column">
-      <section class="side-section center flex-column">
-        <i class="fas fa-users-cog mb-3"></i>
-        <h1 class="admin-brand" style="color: #94cbf0">ADMIN</h1>
-      </section>
-      <section class="side-section center">
-        <section class="w-75 d-flex justify-content-around flex-column h-100">
-          <button
-            id="btnBookingHold"
-            class="
-              btn btn-outline-info
-              anime-btn
-              d-flex
-              justify-content-between
-              align-items-center
-            "
-          >
-            Hold bookings
-            <i class="fas fa-book"></i>
-          </button>
-          <button
-            class="
-              btn btn-outline-info
-              anime-btn
-              d-flex
-              justify-content-between
-              align-items-center
-            "
-            id="bookingBtn"
-          >
-            Bookings
-            <i class="fas fa-book-open"></i>
-          </button>
-          <button
-            id="btnPaymentView"
-            class="
-              btn btn-outline-info
-              anime-btn
-              d-flex
-              justify-content-between
-              align-items-center
-            "
-          >
-            Payments
-            <i class="fas fa-coins"></i>
-          </button>
-          <button
-            id="btnVehiclesView"
-            class="
-              btn btn-outline-info
-              anime-btn
-              d-flex
-              justify-content-between
-              align-items-center
-            "
-          >
-            vehicles
-            <i class="fas fa-car-alt"></i>
-          </button>
-          <button
-            id="btnCustomerView"
-            class="
-              btn btn-outline-info
-              anime-btn
-              d-flex
-              justify-content-between
-              align-items-center
-            "
-          >
-            customers
-            <i class="fas fa-users"></i>
-          </button>
-          <button
-            id="btnDriversView"
-            class="
-              btn btn-outline-info
-              anime-btn
-              d-flex
-              justify-content-between
-              align-items-center
-            "
-          >
-            drivers
-            <i class="fas fa-user-astronaut"></i>
-          </button>
-        </section>
-      </section>
-      <section class="side-section"></section>
-    </div>
-    <div class="panel-container"></div>
-    <i class="far fa-arrow-alt-circle-left" id="backBtn"></i>
-    <footer></footer>
   </body>
+
+  <!-- signup modal start -->
+  <div
+    class="modal fade"
+    id="mdlSignup"
+    tabindex="-1"
+    role="dialog"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="signup-modal center">
+          <div class="sgn-mid-container">
+            <div class="sgn-mid-right center">
+              <div class="sgn-right-mid center flex-clm">
+                <i class="fas display-6 text-light fa-user-astronaut"></i>
+                <section class="rght-upper center">
+                  <h1 class="text-light">SIGNUP</h1>
+                </section>
+                <section class="rght-lower">
+                  <form id="frmDriverSignup">
+                    <input
+                      type="text"
+                      class="form-input"
+                      placeholder="Driver NIC"
+                      id="idRegNIC"
+                    />
+                    <br />
+                    <input
+                      type="text"
+                      placeholder="Username"
+                      id="idRegUsername"
+                    />
+                    <br />
+                    <input
+                      type="password"
+                      placeholder="Password"
+                      id="idRegPassword"
+                    />
+                    <br />
+                    <br />
+                    <button class="btn btn-outline-light" id="btnDriverSignup">
+                      Sign up
+                    </button>
+                  </form>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <h6
+      style="
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+        font-size: 14px;
+      "
+    >
+      Copyright &COPY; 2021 Rocketman.inc, All rights reserved.
+    </h6>
+  </footer>
+  <!-- login modal end -->
 
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -182,6 +160,5 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"
   ></script>
-
-  <script src="./js/dashboard.js"></script>
+  <script src="./controllers/adminLogin.js"></script>
 </html>
